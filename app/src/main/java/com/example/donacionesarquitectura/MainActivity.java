@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        //Instanciacion de objeto controller
+        //Instanciacion de objeto controller j
         controller = new Controller();
         binding.button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             binding.tVdonacion.setText(donationTotal);
             displayMessage("Se realizo la donación");
         } else {
-            displayMessage("No fue posible realizar la donación");
+            displayMessage("No fue posible realizar la donación en este momento");
         }
         binding.etDonacion.setText("");
     }
